@@ -1,0 +1,138 @@
+Command: /home/pedu37/worksapce/fc_top_uvm/./simv +UVM_TESTNAME=fc_fifo_stress_test +UVM_VERBOSITY=UVM_LOW +ntb_random_seed=1765 +FSDB_FILE=fc_fifo_stress_test.fsdb -cm line+cond+fsm+tgl+branch+assert -cm_dir coverage.vdb -cm_name fc_fifo_stress_test_1765 -l fc_fifo_stress_test.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Oct  6 20:46 2026
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test fc_fifo_stress_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'fc_fifo_stress_test.fsdb'
+*Verdi* : Begin traversing the scope (tb_top), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_root.svh(589) @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               fc_fifo_stress_test     -     @342 
+  env                      fc_env                  -     @356 
+    cov                    fc_coverage             -     @422 
+      analysis_imp         uvm_analysis_imp        -     @431 
+    ctrl_agt               fc_ctrl_agent           -     @366 
+      drv                  fc_ctrl_driver          -     @580 
+        rsp_port           uvm_analysis_port       -     @599 
+        seq_item_port      uvm_seq_item_pull_port  -     @589 
+      sqr                  uvm_sequencer           -     @443 
+        rsp_export         uvm_analysis_export     -     @452 
+        seq_item_export    uvm_seq_item_pull_imp   -     @570 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    fifo_agt               fc_fifo_agent           -     @375 
+      drv                  fc_fifo_driver          -     @753 
+        rsp_port           uvm_analysis_port       -     @772 
+        seq_item_port      uvm_seq_item_pull_port  -     @762 
+      sqr                  uvm_sequencer           -     @616 
+        rsp_export         uvm_analysis_export     -     @625 
+        seq_item_export    uvm_seq_item_pull_imp   -     @743 
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    mon                    fc_monitor              -     @384 
+      ap                   uvm_analysis_port       -     @393 
+    scb                    fc_scoreboard           -     @403 
+      imp                  uvm_analysis_imp        -     @412 
+--------------------------------------------------------------
+
+UVM_INFO tb/fc_test.sv(69) @ 145000: uvm_test_top [TEST] === inference #0 (mode=DATA_RAND, corner=0) ===
+UVM_INFO tb/fc_driver.sv(76) @ 4325865000: uvm_test_top.env.ctrl_agt.drv [CTRL_DRV] FC1 done, latency = 428571 cycles
+UVM_INFO tb/fc_driver.sv(76) @ 4346505000: uvm_test_top.env.ctrl_agt.drv [CTRL_DRV] FC2 done, latency = 2062 cycles
+UVM_INFO tb/fc_driver.sv(76) @ 4350495000: uvm_test_top.env.ctrl_agt.drv [CTRL_DRV] FC3 done, latency = 397 cycles
+UVM_INFO tb/fc_scoreboard.sv(127) @ 4350815000: uvm_test_top.env.scb [SB] inference #0 :   OK (checks so far=584, errors=0)
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 4351015000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO tb/fc_coverage.sv(113) @ 4351015000: uvm_test_top.env.cov [COV] ==============================
+UVM_INFO tb/fc_coverage.sv(114) @ 4351015000: uvm_test_top.env.cov [COV] === Functional Coverage ===
+UVM_INFO tb/fc_coverage.sv(115) @ 4351015000: uvm_test_top.env.cov [COV] 전체      :  82.50 %
+UVM_INFO tb/fc_coverage.sv(116) @ 4351015000: uvm_test_top.env.cov [COV] cg_rq     :  93.33 %
+UVM_INFO tb/fc_coverage.sv(117) @ 4351015000: uvm_test_top.env.cov [COV] cg_start  :  54.17 %
+UVM_INFO tb/fc_coverage.sv(118) @ 4351015000: uvm_test_top.env.cov [COV] cg_fifo   : 100.00 %
+UVM_INFO tb/fc_coverage.sv(119) @ 4351015000: uvm_test_top.env.cov [COV] ==============================
+UVM_WARNING tb/fc_coverage.sv(122) @ 4351015000: uvm_test_top.env.cov [COV] Coverage 100% 미달. 테스트별 커버리지는 make regress 로 머지해서 확인
+UVM_INFO tb/fc_driver.sv(164) @ 4351015000: uvm_test_top.env.fifo_agt.drv [FIFO_DRV] words written = 81920, full-stall cycles = 1338
+UVM_INFO tb/fc_scoreboard.sv(135) @ 4351015000: uvm_test_top.env.scb [SB] =====================================
+UVM_INFO tb/fc_scoreboard.sv(136) @ 4351015000: uvm_test_top.env.scb [SB] ======= Scoreboard 최종 리포트 =======
+UVM_INFO tb/fc_scoreboard.sv(137) @ 4351015000: uvm_test_top.env.scb [SB]   inference  : 1 (ok 1)
+UVM_INFO tb/fc_scoreboard.sv(138) @ 4351015000: uvm_test_top.env.scb [SB]   compares   : 584
+UVM_INFO tb/fc_scoreboard.sv(139) @ 4351015000: uvm_test_top.env.scb [SB]   mismatches : 0
+UVM_INFO tb/fc_scoreboard.sv(140) @ 4351015000: uvm_test_top.env.scb [SB] =====================================
+UVM_INFO tb/fc_scoreboard.sv(143) @ 4351015000: uvm_test_top.env.scb [SB] *** SCOREBOARD PASSED ***
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 4351015000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 4351015000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   25
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]     8
+[CTRL_DRV]     3
+[FIFO_DRV]     1
+[RNTST]     1
+[SB]     8
+[TEST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time           4351015000
+"./tb/fc_sva.sv", 63: tb_top.dut.u_fc_sva.c_fifo_full, 435101 attempts, 1 match
+"./tb/fc_sva.sv", 64: tb_top.dut.u_fc_sva.c_backpressure, 435101 attempts, 1338 match
+"./tb/fc_sva.sv", 65: tb_top.dut.u_fc_sva.c_starve_resume, 435101 attempts, 40771 match
+"./tb/fc_sva.sv", 66: tb_top.dut.u_fc_sva.c_illegal_sel, 435101 attempts, 0 match
+"./tb/fc_sva.sv", 67: tb_top.dut.u_fc_sva.c_first_and_last, 435101 attempts, 0 match
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 4351015000 ps
+CPU Time:      5.250 seconds;       Data structure size:   0.9Mb
+Tue Oct  6 20:46:40 2026

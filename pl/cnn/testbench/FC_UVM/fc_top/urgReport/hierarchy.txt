@@ -1,0 +1,33 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT        
+ 90.13  92.98  96.36  97.99  75.00  85.58  92.86 tb_top 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   90.17  92.70  96.36  97.80  75.00  86.27  92.86 dut 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT                 
+     89.18  90.00 100.00  95.16  75.00  85.71 --     u_fc_controller 
+     99.41 100.00  97.87  99.78 --     100.00 --     u_fc_fifo       
+     90.96 100.00  75.00  99.94 --      88.89 --     u_fc_mac        
+     95.95 --     --      99.04 --     --      92.86 u_fc_sva        
+    100.00 --     --     100.00 --     --     --     u_flatten       
+     98.90 100.00 --      96.71 --     100.00 --     u_gelu          
+     91.54 100.00  66.67  99.47 --     100.00 --     u_hidden_ram    
+     91.24 100.00  66.67  98.28 --     100.00 --     u_pose_buffer   
+     85.93  87.50  88.89  93.79 --      73.53 --     u_requant       
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   99.82 100.00 --      99.63 --     --     --     fif 
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT                                    
+ 28.94  31.82  25.00 --     --      30.00 --     uvm_custom_install_recording       
+  3.19   5.06   3.03   0.00 --       4.66 --     uvm_custom_install_verdi_recording 
+ 33.33 --     --     --     --     --      33.33 uvm_pkg                            
+

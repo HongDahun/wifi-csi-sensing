@@ -1,0 +1,31 @@
+# ---- VCS / Verdi 산출물 ----
+simv
+simv.daidir/
+csrc/
+*.fsdb
+*.vpd
+coverage.vdb/
+vdCovLog/
+verdiLog/
+novas*
+ucli.key
+vc_hdrs.h
+*.key
+.fsm.sch.verilog.xml
+comp.log
+cm.log
+tr_db.log
+
+# ---- urg 리포트는 txt 요약만 커밋 ----
+urgReport/*
+!urgReport/dashboard.txt
+!urgReport/hierarchy.txt
+!urgReport/groups.txt
+!urgReport/asserts.txt
+!urgReport/tests.txt
+
+# ---- 기타 ----
+*.orig
+*.swp
+.DS_Store
+!*_test.log

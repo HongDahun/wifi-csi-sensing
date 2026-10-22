@@ -1,0 +1,17 @@
+Tests
+
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 70.07  41.58  60.82  97.84  75.00  32.90  82.35 100.00 
+
+
+Total tests in report: 6
+-------------------------------------------------------------------------------
+Data from the following tests was used to generate this report
+coverage/fc_smoke_test_25108         
+coverage/fc_rand_test_17845          
+coverage/fc_fifo_stress_test_1765    
+coverage/fc_extreme_test_18869       
+coverage/fc_requant_corner_test_6360 
+coverage/fc_ctrl_corner_test_17174   
+

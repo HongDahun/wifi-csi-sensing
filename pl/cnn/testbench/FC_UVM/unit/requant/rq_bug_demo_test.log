@@ -1,0 +1,85 @@
+Command: /home/pedu37/worksapce/fc_unit_uvm/requant/./simv +UVM_TESTNAME=rq_bug_demo_test +UVM_VERBOSITY=UVM_LOW +ntb_random_seed=1 +FSDB_FILE=rq_bug_demo_test.fsdb -cm line+cond+fsm+tgl+branch+assert -cm_dir coverage.vdb -cm_name rq_bug_demo_test_1 -l rq_bug_demo_test.log
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP2_Full64; Runtime version W-2024.09-SP2_Full64;  Oct  6 21:33 2026
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test rq_bug_demo_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'rq_bug_demo_test.fsdb'
+*Verdi* : Begin traversing the scope (tb_top), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO tb/rq_test.sv(102) @ 45000: uvm_test_top [DEMO] item1 acc=1000000 bias=0 mult=100 shift=20 tag=0x001 -> REF rq=95
+UVM_INFO tb/rq_test.sv(102) @ 45000: uvm_test_top [DEMO] item2 acc=791260429 bias=0 mult=296201 shift=65 tag=0x002 -> REF rq=0
+UVM_INFO tb/rq_test.sv(102) @ 45000: uvm_test_top [DEMO] item3 acc=-651666804 bias=0 mult=293545 shift=68 tag=0x003 -> REF rq=0
+UVM_INFO tb/rq_test.sv(102) @ 45000: uvm_test_top [DEMO] item4 acc=-329309601 bias=0 mult=954385 shift=-16 tag=0x004 -> REF rq=-127
+UVM_INFO tb/rq_test.sv(115) @ 246000: uvm_test_top [DEMO] acc_valid rise @ 246000 tag=1
+UVM_INFO tb/rq_test.sv(119) @ 315000: uvm_test_top [DEMO] rq_valid  rise @ 315000 tag=1 DUT rq=95
+UVM_INFO tb/rq_test.sv(115) @ 456000: uvm_test_top [DEMO] acc_valid rise @ 456000 tag=2
+UVM_INFO tb/rq_test.sv(119) @ 525000: uvm_test_top [DEMO] rq_valid  rise @ 525000 tag=2 DUT rq=0
+UVM_INFO tb/rq_test.sv(115) @ 666000: uvm_test_top [DEMO] acc_valid rise @ 666000 tag=3
+UVM_INFO tb/rq_test.sv(119) @ 735000: uvm_test_top [DEMO] rq_valid  rise @ 735000 tag=3 DUT rq=0
+UVM_INFO tb/rq_test.sv(115) @ 876000: uvm_test_top [DEMO] acc_valid rise @ 876000 tag=4
+UVM_INFO tb/rq_test.sv(119) @ 945000: uvm_test_top [DEMO] rq_valid  rise @ 945000 tag=4 DUT rq=-127
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 1055000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO tb/rq_scoreboard.sv(82) @ 1055000: uvm_test_top.env.sb [RQ_SB] compares=4 mismatches=0 coverage=35.0%
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 1055000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 1055000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   17
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DEMO]    12
+[RNTST]     1
+[RQ_SB]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP2/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time              1055000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1055000 ps
+CPU Time:      0.210 seconds;       Data structure size:   0.6Mb
+Tue Oct  6 21:33:24 2026

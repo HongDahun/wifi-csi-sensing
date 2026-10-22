@@ -1,0 +1,77 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          12          5         0
+Category 0     12          5         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          12          5         0
+Severity 0     12          5         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         12  100.00
+Uncovered             2   16.67
+Success              10   83.33
+Failure               0    0.00
+Incomplete            0    0.00
+Without Attempts      2   16.67
+
+-------------------------------------------------------------------------------
+
+Summary for Cover Properties
+             NUMBER PERCENT
+Total Number      5  100.00
+Uncovered         1   20.00
+Matches           4   80.00
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                          ASSERTIONS                          CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_fc_sva.a_done_pulse                                     0        0  1258035             30        0          0
+tb_top.dut.u_fc_sva.a_fcw_range                                      0        0  1258035        1257981        0          0
+tb_top.dut.u_fc_sva.a_feat_range                                     0        0  1258035        1257981        0          0
+tb_top.dut.u_fc_sva.a_flag_needs_valid                               0        0  1258035           5600        0          0
+tb_top.dut.u_fc_sva.a_full_empty_excl                                0        0  1258035        1257981        0          0
+tb_top.dut.u_fc_sva.a_no_x_ctrl                                      0        0  1258035        1257981        0          0
+tb_top.dut.u_fc_sva.a_param_range                                    0        0  1258035           2800        0          0
+tb_top.dut.u_fc_sva.a_pop_not_empty                                  0        0  1258035         819200        0          0
+tb_top.dut.u_fc_sva.a_pose_waddr                                     0        0  1258035            240        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0        0        0      270            270        0          0
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+-------------------------------------------------------------------------------
+
+Detail Report for Cover Properties
+
+Cover Properties Uncovered:
+          COVER PROPERTIES           CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_fc_sva.c_first_and_last        0        0  1258035       0          0
+
+Cover Properties Matches:
+          COVER PROPERTIES          CATEGORY SEVERITY ATTEMPTS MATCHES INCOMPLETE
+tb_top.dut.u_fc_sva.c_backpressure         0        0  1258035    1338          0
+tb_top.dut.u_fc_sva.c_fifo_full            0        0  1258035       1          0
+tb_top.dut.u_fc_sva.c_illegal_sel          0        0  1258035       2          0
+tb_top.dut.u_fc_sva.c_starve_resume        0        0  1258035   65599          6
+
+

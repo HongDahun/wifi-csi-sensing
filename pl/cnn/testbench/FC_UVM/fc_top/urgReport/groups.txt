@@ -1,0 +1,14 @@
+Testbench Group List
+
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+100.00 100.00     1      
+
+
+Total groups in report: 3
+-------------------------------------------------------------------------------
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                          
+100.00 100.00    1      100    1        1            64           64                    fc_pkg::fc_coverage::cg_rq    
+100.00 100.00    1      100    1        1            64           64                    fc_pkg::fc_coverage::cg_start 
+100.00 100.00    1      100    1        1            64           64                    fc_pkg::fc_coverage::cg_fifo  
+

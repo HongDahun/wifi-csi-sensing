@@ -1,0 +1,36 @@
+Dashboard
+
+Date: Mon Oct  5 22:00:38 2026
+
+User: pedu37
+
+Version: W-2024.09-SP2
+Command line: urg -dir coverage.vdb -report urgReport -format both
+Number of tests: 3
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 44.66  20.85   7.48  99.33 --      10.28  33.33  96.67 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME                               
+ 97.39  98.77 100.00  99.90 --      90.91 --     tb_top                             
+ 28.94  31.82  25.00 --     --      30.00 --     uvm_custom_install_recording       
+  3.19   5.06   3.03   0.00 --       4.66 --     uvm_custom_install_verdi_recording 
+ 33.33 --     --     --     --     --      33.33 uvm_pkg                            
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 34.25  20.85   7.48  99.33 --      10.28  33.33 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+ 96.67  96.67     1      
+

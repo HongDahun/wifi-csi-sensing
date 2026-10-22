@@ -1,0 +1,15 @@
+Tests
+
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 47.73  25.40  11.61  99.30 --      16.74  33.33 100.00 
+
+
+Total tests in report: 4
+-------------------------------------------------------------------------------
+Data from the following tests was used to generate this report
+coverage/rq_rand_test_26910        
+coverage/rq_tie_test_18341         
+coverage/rq_boundary_test_19355    
+coverage/rq_shift_range_test_16649 
+
